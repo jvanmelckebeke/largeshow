@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show</title>
+</head>
+<style>
+    body {
+        background-color: greenyellow;
+        margin: 0;
+        padding: 0;
+    }
+
+    div {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        background-color: aqua;
+
+        height: 100vh;
+        width: 100%;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    #text {
+        background-color: hotpink;
+        padding: 0;
+        
+        margin: auto;
+
+        text-align: center;
+        font-size: 10vw;
+
+     
+    }
+</style>
+<script>
+    function main() {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+
+
+        let waarde = urlParams.get('text');
+
+        console.log(waarde);
+
+        document.querySelector("#text").innerHTML = waarde;
+    }
+
+    window.onload = main;
+</script>
+
+<body>
+    <div>
+        <p id="text">hier zou tekst moeten staan</p>
+    </div>
+</body>
+
+</html>
