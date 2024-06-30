@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>large type</title>
 </head>
+
 <body>
     <form action="./show.html" method="get">
         <input type="text" name="text">
@@ -12,4 +14,8 @@
         <button type="submit">show me</button>
     </form>
 </body>
+<script>
+    navigator.serviceWorker && navigator.serviceWorker.register('./sw.js').then(function (registration) { console.log('Excellent, registered with scope: ', registration.scope); });
+</script>
+
 </html>
