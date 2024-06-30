@@ -9,10 +9,5 @@
     "display": "fullscreen",
     "display_override": ["standalone"],
     "icons": [
-        {
-            "src": "./avatar.png",
-            "type": "image/png",
-            "sizes": "700x700"
-        }   
     ]
 }
