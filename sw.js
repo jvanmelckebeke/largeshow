@@ -6,7 +6,7 @@ const assets = [
   './',
   './images/'
 ]
-
+//
 // cache size limit function
 const limitCacheSize = (name, size) => {
   caches.open(name).then(cache => {
